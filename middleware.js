@@ -1,4 +1,4 @@
-module.exports = {
+var middleware = {
 	requireAuthenication: function(req, res, next){
 		console.log('private page hit!!!');
 		next();
@@ -8,3 +8,5 @@ module.exports = {
 		next();
 	}
 };
+
+module.exports = middleware;
